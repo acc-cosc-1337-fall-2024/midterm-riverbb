@@ -1,14 +1,15 @@
 /*
 The program flow is as follows:
 1) Prompt user for a number.
-        a-Validate that the number is in the range of 1 to 15
-2) Pass the number to the get_fib_number function, save the return value to a variable in main.
-3) Display the Fibonacci number
+        a-Validate that the number is in the range of 1 to 10
+2) Pass the number to the get_factorial_sequence function, save the return value to a variable in main.
+3) Display the factorial sequence
 4) The program will loop until user wants to exit.
 */
 
-#include "question3.h"
+#include "question4.h"
 #include <iostream>
+#include <string>
 
 int main()
 {
@@ -18,16 +19,16 @@ int main()
 
     do
       {
-        std::cout << "\nentre a number 1 thru 15: ";
+        std::cout << "\nenter a number 1 thru 10: ";
         std::cin >> number;
-        if (number < 1 || number > 15)
+        if (number < 1 || number > 10)
         {
           std::cout << "invalid number, try again\n";
           continue;
         }
 
-        int fib_number = get_fib_number(number);
-        std::cout << "number #" << number << " in the fibonacci sequence is " << fib_number;
+        std::string sequence = get_factorial_sequence(number);  
+        std::cout << "factorial sequence: " << sequence;
 
         std::cout << "\ndo you want to do that again? (y/n): ";
         std::cin >> choice;
