@@ -11,15 +11,15 @@ int main()
 
     do
       {
-        std::cout << "\nentre mass of the object in kgs: ";
+        std::cout << "\nenter mass of the object in kgs: ";
         std::cin >> mass;
 
-        std::cout << "entre velocity of the object in m/s: ";
+        std::cout << "enter velocity of the object in m/s: ";
         std::cin >> velocity;
 
         if (mass < 0 || velocity < 0)
           { 
-            std::cout << "invalid input. please entre positive values.\n";
+            std::cout << "invalid input. please enter positive values.\n";
             continue;
           }
 
