@@ -18,7 +18,7 @@ int main()
 
     do
       {
-        std::cout << "\nentre a number 1 thru 15: ";
+        std::cout << "\nenter a number 1 thru 15: ";
         std::cin >> number;
         if (number < 1 || number > 15)
         {
